@@ -31,5 +31,9 @@
   "Role": {
     "dataSource": "facebookAuth",
     "public": false
+  },
+  "Customer": {
+    "dataSource": "facebookAuth",
+    "public": true
   }
 }
