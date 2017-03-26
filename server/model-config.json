@@ -4,7 +4,8 @@
       "loopback/common/models",
       "loopback/server/models",
       "../common/models",
-      "./models"
+      "./models",
+      "../node_modules/loopback-component-passport/lib/models"
     ],
     "mixins": [
       "loopback/common/mixins",
@@ -14,7 +15,8 @@
     ]
   },
   "User": {
-    "dataSource": "facebookAuth"
+    "dataSource": "facebookAuth",
+    "public": false
   },
   "AccessToken": {
     "dataSource": "facebookAuth",
@@ -35,5 +37,17 @@
   "Customer": {
     "dataSource": "facebookAuth",
     "public": true
+  },
+  "customerCredential": {
+    "dataSource": "facebookAuth",
+    "public": false
+  },
+  "customerIdentity": {
+    "dataSource": "facebookAuth",
+    "public": false
+  },
+  "accessToken": {
+    "dataSource": "facebookAuth",
+    "public": false
   }
 }
